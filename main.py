@@ -407,7 +407,7 @@ def f(l):
 print(f(l))
  """
 
- l2 = [1, 2, 3, 4, 5, 6]
-def f2(l)
-    def get_mult (l2):
-    
+#  l2 = [1, 2, 3, 4, 5, 6]
+# def f2(l)
+#     def get_mult (l2):
+#
