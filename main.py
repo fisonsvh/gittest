@@ -384,7 +384,30 @@
 # print(type(string_1))
 # print(type(new_list)) """
 
-def get_sum(a, b):
+
+""" def get_sum(a, b):
     return a + b
 
-print(get_sum(1, 5))
+
+print(get_sum(1, 5)) """
+
+""" a = 5
+def f ():
+    global a+=1
+    print ()
+print(a) """
+
+""" l = [1, 2, 3]
+
+
+def f(l):
+    return [i * 2 for i in l]
+
+
+print(f(l))
+ """
+
+ l2 = [1, 2, 3, 4, 5, 6]
+def f2(l)
+    def get_mult (l2):
+    
