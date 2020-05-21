@@ -4,8 +4,9 @@
 
 
 balalayka
-async def asd
-
+async def asdaasdqwe
+qweggbqweggb
+asdaasdqwe
 
 asd(parameter_list):
     pass
@@ -16,6 +17,13 @@ asd(parameter_list):
 $ git config --global user.email johndoe@example.com"""
 sorted
 
-asdasd"""
+asdaasdqwe"""
 
 
+asdasdasd    $ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com""    $ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com""    $ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com""    $ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com""    $ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com""    $ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com""
