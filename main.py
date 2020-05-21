@@ -1,13 +1,13 @@
-#s = 'Hello World'
-#if ' ' in s:
+""" #s = 'Hello World'
+# if ' ' in s:
 #    s = s.upper()
-#else:
+# else:
 #    s = s.lower()
 
-#print(s)
+# print(s)
 
 
-#def getsum(*args):
+# def getsum(*args):
 #    print(args)
 
 
@@ -382,6 +382,9 @@
 # print(list)
 # string_1 = 'Список в квадрате', new_list,'\n','Сумма всех элементов списка – %s' % sum(new_list)
 # print(type(string_1))
-# print(type(new_list))
+# print(type(new_list)) """
 
+def get_sum(a, b):
+    return a + b
 
+print(get_sum(1, 5))
