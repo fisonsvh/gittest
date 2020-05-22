@@ -11,3 +11,7 @@ def get_len(string):
     for i in string:
         cnt += 1
     return cnt
+
+
+def len_name(name):
+    return len(name)

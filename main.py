@@ -418,3 +418,4 @@ import libs as l
 
 print(l.get_count('hello world', 'o'))
 print(l.get_len('hello'))
+print('Your name lens is %s' % l.len_name('Vlad'))
