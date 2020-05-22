@@ -412,3 +412,4 @@
 # #     def get_mult (l2):
 # #
 
+import os, random
