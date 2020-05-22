@@ -413,3 +413,8 @@
 # #
 
 import os, random
+
+import libs as l
+
+print(l.get_count('hello world', 'o'))
+print(l.get_len('hello'))
