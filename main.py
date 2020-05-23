@@ -414,8 +414,27 @@
 
 import os, random
 
-import libs as l
+import libs as mylist
+#
+# print(l.get_count('hello world', 'o'))
+# print(l.get_len('hello'))
+# print('Your name lens is %s' % l.len_name('Vlad'))
 
-print(l.get_count('hello world', 'o'))
-print(l.get_len('hello'))
-print('Your name lens is %s' % l.len_name('Vlad'))
+# import random as r
+#
+# mylist = list(range(1, r.randint(100, 500)))
+# print(mylist)
+#
+# mylist2 = list(range(r.randint(200, 500), r.randint(100, 500)))
+# print(mylist)
+#
+# mylist = set(mylist)
+# mylist2 = set(mylist2)
+#
+# difference = (mylist - mylist2)
+#
+# x = 1
+# for i in difference:
+#     print(x, "difference is %s" % i)
+#     x += 1
+
