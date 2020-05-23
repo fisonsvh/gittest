@@ -74,3 +74,17 @@
 #     for file in files:
 #         print(adress+'/' + file)
 
+from datetime import date, datetime, time
+import time
+
+now = datetime.datetime.now()
+
+import colorama
+
+t = datetime.now()
+p = datetime.today()
+
+t = time.time()
+print(t)
+
+print(p)
