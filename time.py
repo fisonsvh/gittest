@@ -50,10 +50,14 @@
 
 import os
 
-file_path = os.walk('libs.py')
-
+file_path = os.walk(r'D:\Corey Schafer')
+list_path = []
 for i in file_path:
-    print(i)
+    list_path.append(i)
 
-print(i)
-print(file_path)
+print(os.name[list_path])
+
+for x in list_path:
+    for file in x:
+        for p in file:
+            print(p)
