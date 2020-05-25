@@ -437,4 +437,157 @@ import libs as mylist
 # for i in difference:
 #     print(x, "difference is %s" % i)
 #     x += 1
+# # # # def get_count(string, symbol):
+# # # #     cnt = 0;
+# # # #     for i in string:
+# # # #         if i == symbol:
+# # # #             cnt = cnt + 1
+# # # #     return cnt
+# # # #
+# # # #
+# # # # def get_len(string):
+# # # #     cnt = 0
+# # # #     for i in string:
+# # # #         cnt += 1
+# # # #     return cnt
+# # # #
+# # # #
+# # # # def len_name(name):
+# # # #     return len(name)
+# # #
+# # # import random as r
+# # #
+# # # guess = r.randint (1, 10)
+# # #
+# # # while True:
+# # #     question = int(input("Попробуй угадать число от 1 до 200. Вводи сюда число: "))
+# # #     if question == guess:
+# # #         anwser = input("Отлично, ты угадал! Хочешь сыграть еще?: ")
+# # #         if anwser == 'д' or anwser == 'да':
+# # #             guess = r.randint(1, 10)
+# # #             continue
+# # #         else:
+# # #             print("Спасибо за игру!")
+# # #             break
+# # #     elif question < guess:
+# # #         print('Загаданое число немного больше! Попробуй еще')
+# # #     elif question > guess:
+# # #         print('Загаданое число немного меньше! Попробуй еще!')
+# #
+# # from datetime import date, datetime
+# # import locale
+# #
+# # #DATE CLASS
+# #
+# # # today = date.today()
+# # # print(today)
+# # # print(today.year)
+# # # print(today.month)
+# # # print(today.day)
+# # # print(today.weekday())
+# #
+# # #DATETIME CLASS
+# #
+# # # today = datetime.now()
+# # # today2 = datetime.today()
+# # #
+# # # print(today)
+# # # print(today2)
+# #
+# # t = datetime.now()
+# # t = t.timetuple()
+# #
+# # for i in t:
+# #     print(i, end='-
+#
+# import os
+# list = []
+# tree = os.walk(r'C:\Users\User\PycharmProjects\gittest')
+#
+# for i in tree:
+#     list.append(i)
+#
+# print(list)
+#
+# for adress, dirs, files in list:
+#     for file in files:
+#         print(adress+'/' + file)
 
+# from datetime import date, datetime, time
+# import time
+#
+# now = datetime.datetime.now()
+#
+# import colorama
+#
+# t = datetime.now()
+# p = datetime.today()
+#
+# t = time.time()
+# print(t)
+#
+# print(p)
+# """
+# 1. Дан массив, в котором среди прочих элементов есть слово "odd" (нечетный).
+# Определите, есть ли в списке число, которое является индексом элемента "odd". Напишите функцию, которая будет возвращать
+# True или False, соответсвенно.
+# """
+#
+#
+# def odd_ball(arr):
+#     x = arr.index('odd')
+#     for i in arr:
+#         if int(x) in arr:
+#             return True
+#         else:
+#             return False
+#
+#
+# print(odd_ball(["even", 4, "even", 7, "even", 55, "even", 6, "even", 10, "odd", 3, "even"]))  # True
+# print(odd_ball(["even", 4, "even", 7, "even", 55, "even", 6, "even", 9, "odd", 3, "even"]))  # False
+# print(odd_ball(["even", 10, "odd", 2, "even"]))  # True
+#
+# """
+# 3. Дан список имен. Выберите в новый список только те имена, которые состоят из 4-х букв.
+# ["Ryan", "Mark", "John", "Paul"]
+# """
+#
+# names = ["Ryan", "Kieran", "Mark", "John", "David", "Paul"]
+# new_names = []
+# def get_names (names):
+#     for i in names:
+#         if len(i) == 4:
+#             new_names.append(i)
+#     print(new_names)
+#
+# get_names(names)
+#
+# """
+#
+# 2. Напишите функцию find_sum(n), где аргумент функции - это конечный элемент последовательности включительно.
+#  Функция должна вернуть сумму всех чисел последовательности, кратных 3 или 5. Попробуйте решить задачу двумя
+#  способами (один из способов в одну строчку кода).
+#
+# """
+#
+
+#
+# def find_sum(n):
+#     l = list(range(1, n + 1))
+#     n = l[-1]
+#     b = []
+#     for i in l:
+#         if i % 3 == 0 or i % 5 == 0:
+#             b.append(i)
+#     print(b)
+#     return sum(b)
+#
+#
+# print(find_sum(10))
+
+
+# def find_sum(n):
+#     return sum(range(1, n))
+#
+#
+# print(find_sum(5))
