@@ -16,6 +16,20 @@ def get_html(url, params=None):
     return r
 
 
+def get_content(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    items = soup.find_all('div', class_='article new-item')
+    news = []
+    for item in items:
+        news.append({
+            'date': item.find('span', class_='article__date').get_text(),
+            'title': item.find('a', class_='article__title').get_text(),
+            'views': item.find('span', class_='article__watches').get_text(),
+            'link': item.find('a', class_='article__title').get('href')
+        })
+    return news
+
+
 def get_pages_count(html):
     soup = BeautifulSoup(html, 'html.parser')
     pagination = soup.find_all('a', class_='pagination__item')
@@ -32,20 +46,6 @@ def save_file(items, path):
         for item in items:
             writer.writerow(
                 [item['date'], item['title'], item['views'], item['link']])
-
-
-def get_content(html):
-    soup = BeautifulSoup(html, 'html.parser')
-    items = soup.find_all('div', class_='article new-item')
-    news = []
-    for item in items:
-        news.append({
-            'date': item.find('span', class_='article__date').get_text(),
-            'title': item.find('a', class_='article__title').get_text(),
-            'views': item.find('span', class_='article__watches').get_text(),
-            'link': item.find('a', class_='article__title').get('href')
-        })
-    return news
 
 
 def parse():
