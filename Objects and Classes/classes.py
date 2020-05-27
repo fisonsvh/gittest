@@ -9,7 +9,7 @@ class Car:
         self.make = make
         self.model = model
         print(make, name, model, sep='\n')
-        Car.car_count +=1
+        Car.car_count += 1
         print(Car.car_count)
 
     def stop(self):
