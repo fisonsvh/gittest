@@ -412,9 +412,6 @@
 # #     def get_mult (l2):
 # #
 
-import os, random
-
-import libs as mylist
 #
 # print(l.get_count('hello world', 'o'))
 # print(l.get_len('hello'))

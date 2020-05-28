@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import csv
 
 URL = "https://mvs.gov.ua/ua/news"
 HEADERS = {

@@ -1,6 +1,7 @@
+import csv
+
 import requests
 from bs4 import BeautifulSoup
-import csv
 
 URL = 'https://auto.ria.com/newauto/marka-mercedes-benz/'
 HEADERS = {
