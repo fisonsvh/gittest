@@ -1,16 +1,18 @@
-# Создаем класс Car
+class Person:
 
-class Car:
-    car_count = 0
-
-    def start(self, make, name, model):
-        print("Двигатель заведен")
+    def __init__(self, name, surname):
         self.name = name
-        self.make = make
-        self.model = model
-        print(make, name, model, sep='\n')
-        Car.car_count += 1
-        print(Car.car_count)
+        self.surname = surname
+        self.__age = 30
 
-    def stop(self):
-        print("Отключаем двигатель")
+    def print_info(self):
+        print(f'Hello, my name is {self.name}! My surname is {self.surname}. I am {self.__age} years old.')
+
+    def get_age(self):
+        return self.__age
+
+    def set_age(self, value):
+        if value in range(1, 100):
+            self.__age = value
+        else:
+            print('Enter correct value')

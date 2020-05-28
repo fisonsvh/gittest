@@ -1,7 +1,13 @@
-from classes import Car
+from classes import Person
 
-car_a = Car()
-car_b = Car()
+fison = Person('Vlad', 'Fisochenko')
+tka4 = Person('Anton', 'Tkachenko')
 
-car_a.start("Toyota", "Corolla", 2008)
-car_b.start("Lexus", "IS–250", 2018)
+fison.print_info()
+tka4.print_info()
+
+print(fison.get_age())
+
+fison.set_age(20)
+
+print(fison.get_age())
