@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 
 
 class Parser:
-    raw_html = ''
-    html = ''
+    # raw_html = ''
+    # html = ''
     results = []
 
     def __init__(self, URL, path):
