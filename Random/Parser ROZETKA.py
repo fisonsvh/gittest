@@ -1,26 +1,20 @@
-import requests
-from bs4 import BeautifulSoup
+import random as r
+import time as t
 
-URL = "https://rozetka.com.ua/notebooks/c80004/producer=asus/"
-HEADERS = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0',
-    'accept': '*/*'
-}
-
-
-def get_html(url, params=None):
-    r = requests.get(url, headers=None, params=params)
-    return r
-
-
-def get_content(html):
-    soup = BeautifulSoup(html, 'html.parser')
-    items = soup.find_all('div', class_='proposition')
-    cars = []
-
-
-def pars():
-    html = get_html(URL)
-
-
-pars()
+print("I can guess your password!")
+t1 = t.time()
+while True:
+    inp = int(input("Enter your password: \n"))
+    guess = None
+    tries = []
+    x = 0
+    while guess != inp:
+        guess = r.randint(1, 9999)
+        tries.append(guess)
+        x += 1
+        print(f'{x} try is – {guess}')
+    if guess == inp:
+        print(f'Your password is {guess}')
+    t2 = t.time()
+    print(f'Time needed – {t2 - t1}')
+    print(f'Tries – {len(tries)}')
