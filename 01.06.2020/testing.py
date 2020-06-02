@@ -1,46 +1,39 @@
-import os
-from pandas import *
-import pandas as pd
+car = input('What car do you wanna get: \n')
+print(f'Let me see if I can find you a {car}...')
 
-#############################################################
-#############################################################
-# files = os.walk(r"C:\Users\User\Desktop\Examples")
-# list_of_files = []
-# text_path = []  # здесь хранятся пути к файлам
-# for i in files:
-#     list_of_files.append(i)
-#     for i in list_of_files:
-#         for j in i[2]:
-#             text_path.append(i[0] + '/' + j)
-# print(text_path[0])
-#############################################################
-#############################################################
 
-files = os.walk(r"C:\Users\User\Desktop\Examples")
-list_of_files = [] # здесь хранятся пути к файлам
-text_path = []  # здесь хранятся пути к файлам
-for i in files:
-    list_of_files.append(i)
-    for i in list_of_files:
-        for j in i[2]:
-            text_path.append(i[0] + '/' + j)
-print(text_path[0])
 
-#############################################################
-#############################################################
+
+
+
+#peoples = {
 #
-def parsing_files(path):
-    data = pd.read_csv(path)
-    df = pd.DataFrame(data)
-    print(df)
-
-for path in text_path:
-    parsing_files(path)
-
-
-#############################################################
-#############################################################
-
+#     'player_2': {
+#         'name': 'Artem',
+#         'surname': 'Siaglo',
+#         'age': 28,
+#         'city': 'Kiev'
+#     },
+#     'player_1': {
+#         'name': 'Vlad',
+#         'surname': 'Fisochenko',
+#         'age': 25,
+#         'city': 'Kiev'
+#     },
+#
+# }
+# x = 1
+# for user_name, user_info in peoples.items():
+#     print(f'User {x} name is – {user_name}')
+#     print(f"{user_info['name']}")
+#
+#
+#
+#
+#     x += 1
+#
+#
+#
 
 
 
