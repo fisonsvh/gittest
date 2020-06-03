@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/MY_PARSER" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Objects and Classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/01.06.2020" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02.06.2020" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
