@@ -1,17 +1,37 @@
-def garage(mark, model, **car_info):
-    car_info['mark'] = mark
-    car_info['model'] = model
-    print(car_info)
-    return car_info
+from sandwitch import sandwitch
+
+sandwitch('помидор', 'сыр', 'лук')
+
+# 8.13
+# def profile(first, last, **user_info):
+#     user_info['first'] = first
+#     user_info['last'] = last
+#     return user_info
+
+# print(profile('Vlad', 'Fisochenko', age=25, country='Ukraine', city='Kyiv'))
+
+# 8.14
+# def car_info (**info):
+#     dict = info
+#     print(info)
+#     print(type(info))
+#     print(dict)
+#     for i,z in dict.items():
+#         print(i,z)
+#
+#
+# car_info(mark='Toyota', model = 'Camry', wheels=4)
 
 
-car = garage('subaru', 'outback', wheels=4, color='blue', tow_package=True)
-print(car)
-
-
-
-
-
+##def garage(mark, model, **car_info):
+#     car_info['mark'] = mark
+#     car_info['model'] = model
+#     print(car_info)
+#     return car_info
+#
+#
+# car = garage('subaru', 'outback', wheels=4, color='blue', tow_package=True)
+# print(car)
 
 # ingridients = []
 # def sandwich(*args):
